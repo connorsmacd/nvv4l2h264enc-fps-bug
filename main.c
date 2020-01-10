@@ -40,7 +40,7 @@ int main(int argc, char** argv)
 
   GstBus* const bus = gst_element_get_bus(pipeline);
 
-  gboolean done = FALSE, error_occurred = TRUE, fps_changed = FALSE;
+  gboolean done = FALSE, error_occurred = FALSE, fps_changed = FALSE;
 
   do
   {
