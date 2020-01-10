@@ -2,7 +2,7 @@ Test code for nvv4l2h264enc dynamic FPS change bug
 
 This program will launch a pipeline with a videotestsrc at 15 FPS. Once the
 pipeline has started playing, the program will attempt to change the FPS to 30,
-optionally stopping the pipeline in between the CAPS change. There is a filesink
+optionally stopping the pipeline in between the CAPS change. There is a fakesink
 that will trigger an EOS once it has received 150 buffers, so the program
 should eventually exit gracefully if everything is working.
 
